@@ -5,6 +5,7 @@ import hashlib
 import json
 import launch
 
+
 colorama.init()
 open('activeuser', 'w').write('ß')
 def login():
