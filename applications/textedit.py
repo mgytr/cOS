@@ -218,7 +218,7 @@ def main():
         options.insert(1, '/Delete a File/')
         options.insert(2, '/Refresh/')
         options.insert(3, '/Abort/')
-        menu = TerminalMenu(options, title='Files')
+        menu = TerminalMenu(options, title='Files', quit_keys=tuple())
         menu_entry_index = menu.show()
         selected: str = options[menu_entry_index]
         if selected.startswith('/'):
@@ -238,14 +238,14 @@ def main():
                 while 1:
                     options: list = os.listdir(f'users/{open("activeuser").read()}/Personal Files')
                     options.insert(0, '/Abort/')
-                    menu = TerminalMenu(options, title='Delete a File')
+                    menu = TerminalMenu(options, title='Delete a File', quit_keys=tuple())
                     menu_entry_index = menu.show()
                     selected: str = options[menu_entry_index]
                     if selected.startswith('/'):
                         break
                     else:
                         options = ['Yes', 'No']
-                        menu = TerminalMenu(options, title=f'Are you sure you want to delete "{selected}"?')
+                        menu = TerminalMenu(options, title=f'Are you sure you want to delete "{selected}"?', quit_keys=tuple())
                         index = menu.show()
                         if options[index] == 'Yes':
                             os.remove(f'users/{open("activeuser").read()}/Personal Files/{selected}')

@@ -4,6 +4,8 @@ import colorama, launch, json, os
 
 from simple_term_menu import *
 
+
+
 def launch_de(username):
     while 1:
         os.system('clear')
@@ -13,7 +15,7 @@ def launch_de(username):
         options.append('Log off')
         options.append('Shut down')
 
-        terminal_menu = TerminalMenu(options, title='Programs')
+        terminal_menu = TerminalMenu(options, title='Programs', quit_keys=tuple())
         menu_entry_index = terminal_menu.show()
         selected = options[menu_entry_index]
         os.system('clear')
