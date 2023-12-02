@@ -1,0 +1,5 @@
+{
+    "Clock": "clock.py",
+    "Calculator": "calculator.py",
+    "Text Editor": "textedit.py"
+}
