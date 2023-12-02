@@ -1,4 +1,3 @@
-from art import *
 from datetime import datetime
 from time import sleep
 from sys import stdin
