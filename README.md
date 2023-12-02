@@ -18,5 +18,6 @@ An operating system on Python.
 1) Change the directory to the cloned repo
 2) Run `python3 start.py`
 
+This program only works on Linux/MacOS
 # Code used:
 /applications/textedit.py: https://github.com/urwid/urwid/blob/master/examples/edit.py
