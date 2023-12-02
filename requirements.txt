@@ -1,0 +1,4 @@
+colorama
+urwid
+simple_term_menu
+sympy
