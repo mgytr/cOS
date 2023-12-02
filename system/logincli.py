@@ -10,6 +10,7 @@ open('activeuser', 'w').write('ß')
 def login():
     if not os.path.exists('users'):
         os.mkdir('users')
+    
     users = os.listdir('users')
 
     if len(users) == 0:
